@@ -1,0 +1,416 @@
+<!DOCTYPE html><html lang="en-NZ"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thorne Group — Home Option E</title>
+<style>
+:root{--ww:#FAF9F6;--wg:#393533;--mid:#7a746e;--read:#54504c;--rule:#c8c3bb;--brown:#6B4E3D;--panel:#F2F0ED;}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--ww)!important}
+/* FOUC fix: hold warm-white layout while Wix hydrates, then fade in intentionally.
+   Body starts hidden with an explicit held height so the layout never jumps.
+   Reveal fires via JS (.tg-ready); a pure-CSS fallback guarantees it also reveals
+   on its own even if that script is delayed, so the page can never stay blank. */
+body{opacity:0;min-height:100vh;background:var(--ww)!important}
+body.tg-ready,
+body.tg-fallback{animation:tgReveal .7s cubic-bezier(.22,.61,.36,1) forwards}
+@keyframes tgReveal{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+/* Safety net: if no class ever lands, reveal after a beat with no motion */
+@media all{body{animation:tgSafety .01s linear 1.2s forwards}}
+@keyframes tgSafety{to{opacity:1}}
+body{font-family:'Metric','Helvetica Neue',Arial,sans-serif;font-weight:300;color:var(--read);-webkit-font-smoothing:antialiased}
+strong{font-weight:500}
+img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.hero-video{display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.nav{position:sticky;top:0;z-index:50;background:var(--ww);border-bottom:1px solid var(--rule);
+display:flex;align-items:center;justify-content:space-between;padding:22px 56px}
+.brand{font-size:19px;letter-spacing:.22em;color:var(--wg);font-weight:400}
+.navlinks{display:flex;gap:38px;align-items:center}
+.navlinks a{font-size:13px;letter-spacing:.16em;color:var(--wg);text-decoration:none;text-transform:uppercase}
+.navcta{font-size:13px;letter-spacing:.16em;color:var(--wg);text-decoration:none;text-transform:uppercase;border-bottom:1px solid var(--wg);padding-bottom:3px}
+.hero{display:grid;grid-template-columns:minmax(auto,600px) 1fr;align-items:stretch;min-height:780px;gap:64px;padding-right:56px}
+.hero-copy{padding:84px 0 84px 56px;display:flex;flex-direction:column;justify-content:center;max-width:600px}
+.eyebrow{font-size:13px;letter-spacing:.4em;text-transform:uppercase;color:var(--mid);margin-bottom:34px}
+h1{font-weight:300;font-size:clamp(40px,3.6vw,56px);line-height:1.14;letter-spacing:-.02em;color:var(--wg)}
+h1 .light{color:var(--mid)}
+.lead{font-size:19px;line-height:1.75;color:var(--read);margin-top:32px;max-width:30em}
+.pullquote{margin-top:36px;padding-left:22px;border-left:2px solid var(--rule);font-size:18px;line-height:1.7;color:var(--wg)}
+.hero-img{position:relative;min-height:780px}
+.hero-stats{display:flex;margin-top:46px;padding-top:34px;border-top:1px solid var(--rule)}
+.hstat{flex:1;display:flex;flex-direction:column;padding-right:26px}
+.hstat + .hstat{padding-left:26px;border-left:1px solid var(--rule)}
+.hstat-n{font-size:38px;font-weight:300;line-height:1;letter-spacing:-.01em;color:var(--wg)}
+.hstat-l{font-size:15px;line-height:1.45;color:var(--mid);margin-top:12px}
+@media(max-width:1000px){
+ .nav{padding:20px 32px}.navlinks{gap:24px}
+ .hero{grid-template-columns:1fr;min-height:0;gap:0;padding-right:0}
+ .hero-copy{padding:60px 32px 64px;max-width:none;order:1}
+ .hero-img{order:2;min-height:420px;height:420px}
+ h1{font-size:42px}
+ .hero-stats{margin-top:40px;padding-top:30px}.hstat-n{font-size:34px}
+}
+@media(max-width:560px){
+ .nav{padding:16px 22px}.navlinks{display:none}.brand{font-size:17px}
+ .hero-copy{padding:48px 22px 44px}.eyebrow{font-size:13px;margin-bottom:26px}
+ h1{font-size:34px;line-height:1.18}.lead{font-size:18px;margin-top:26px}
+ .pullquote{font-size:18px;margin-top:30px}
+ .hero-img{min-height:340px;height:340px}
+ .hero-stats{margin-top:34px;padding-top:26px}
+ .hstat{padding-right:12px}.hstat + .hstat{padding-left:12px}
+ .hstat-n{font-size:26px}.hstat-l{font-size:14px;margin-top:8px;line-height:1.35}
+}
+
+/* WHY — image strip (desktop) / accordion (mobile) */
+.why{max-width:1440px;margin:0 auto;padding:110px 56px 100px}
+.w-head{max-width:680px;margin-bottom:56px}
+.w-head h2{font-weight:300;font-size:clamp(32px,2.6vw,42px);line-height:1.28;letter-spacing:-.02em;color:var(--wg)}
+.w-head .w-lead{margin-top:22px;font-size:19px;line-height:1.7;color:var(--read)}
+.w-head strong{font-weight:500}
+.w-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}
+.w-item{display:flex;flex-direction:column}
+.w-tile{appearance:none;border:none;background:none;padding:0;text-align:left;cursor:pointer;font-family:inherit;display:flex;flex-direction:column;width:100%}
+.w-pic{aspect-ratio:3/4;overflow:hidden;filter:grayscale(28%) saturate(.92);opacity:.82;transition:all .35s ease;width:100%}
+.w-item.is-on .w-pic,.w-tile:hover .w-pic{filter:none;opacity:1}
+.w-row{display:flex;flex-direction:column;position:relative}
+.w-num{font-size:12px;letter-spacing:.4em;color:var(--mid);margin:18px 0 8px}
+.w-title{font-weight:300;font-size:20px;line-height:1.3;letter-spacing:-.01em;color:var(--wg);
+padding-bottom:14px;border-bottom:2px solid transparent;transition:border-color .35s ease}
+.w-item.is-on .w-title{border-bottom-color:var(--brown);font-weight:500}
+.w-plus{position:absolute;top:-2px;right:0;font-size:26px;font-weight:400;line-height:1;color:var(--brown);
+transition:transform .35s ease;opacity:1}
+.w-item.is-on .w-plus{transform:rotate(45deg)}
+.w-hint{margin-top:20px;font-size:17px;line-height:1.6;color:var(--mid)}
+.w-hint-plus{display:inline-block;color:var(--brown);font-weight:500;transform:translateY(1px)}
+.w-nav{display:flex;gap:16px;margin-top:32px;padding-top:24px;border-top:1px solid var(--rule)}
+.w-arrow{font-family:inherit;font-size:16px;letter-spacing:.02em;color:var(--wg);background:var(--ww);
+border:1px solid var(--wg);padding:12px 24px;cursor:pointer;transition:background .25s ease,color .25s ease}
+.w-arrow:hover{background:var(--wg);color:var(--ww)}
+.w-arrow span{font-size:18px}
+/* auto-cycle highlight fade while idle */
+.w-item.is-cycle .w-pic{filter:none;opacity:1}
+.w-item.is-cycle .w-title{border-bottom-color:var(--brown)}
+.w-drop{display:none}
+.w-panel-wrap{position:relative;margin-top:34px}
+.w-caret{position:absolute;top:-10px;width:22px;height:22px;background:var(--panel);
+border-top:2px solid var(--brown);border-left:2px solid var(--brown);
+transform:rotate(45deg);transition:left .4s cubic-bezier(0.22,0.61,0.36,1)}
+.w-panel{display:grid;grid-template-columns:220px 1fr;gap:52px;padding:52px 60px;
+background:var(--panel);border-top:2px solid var(--brown);opacity:1;transition:opacity .5s ease}
+.w-panel-pic{aspect-ratio:3/4;overflow:hidden}
+.w-kicker{font-size:14px;letter-spacing:.32em;text-transform:uppercase;color:var(--brown);font-weight:500}
+.w-knum{margin-right:14px;color:var(--mid);font-weight:300}
+.w-sub{font-size:17px;line-height:1.6;color:var(--mid);margin-top:16px}
+.w-quote{margin-top:18px;font-weight:300;font-size:clamp(24px,2.2vw,32px);line-height:1.42;letter-spacing:-.01em;color:var(--wg)}
+.w-attr{margin-top:22px;font-size:17px;color:var(--mid)}
+/* SERVICES — full-bleed bands with ghost numerals */
+.sv-head{max-width:1440px;margin:0 auto;padding:0 56px}
+.sv-head .in{border-top:1px solid var(--rule);padding:52px 0 56px}
+.sv-head .kicker{font-size:18px;line-height:1.6;color:var(--mid);margin-bottom:14px}
+.sv-head h2{font-weight:300;font-size:clamp(38px,3.4vw,52px);letter-spacing:-.025em;color:var(--wg)}
+.band{position:relative;display:grid;grid-template-columns:1fr 1fr;min-height:560px}
+.band .pic{min-height:560px}
+.band .txt{position:relative;display:flex;flex-direction:column;justify-content:center;padding:70px 88px;background:var(--panel)}
+.band.alt .txt{order:1;background:var(--ww)}
+.band.alt .pic{order:2}
+.ghost{position:absolute;top:34px;right:44px;font-size:150px;font-weight:300;line-height:1;color:var(--rule);opacity:.55;pointer-events:none}
+.band h3{font-weight:300;font-size:clamp(32px,2.7vw,42px);line-height:1.2;letter-spacing:-.02em;color:var(--wg)}
+.band p{font-size:18px;line-height:1.75;color:var(--read);margin-top:22px;max-width:26em}
+.bnum{display:none;font-size:13px;letter-spacing:.4em;color:var(--mid);margin-bottom:14px}
+.band-cta{display:inline-block;margin-top:28px;font-size:14px;letter-spacing:.24em;text-transform:uppercase;color:var(--wg);text-decoration:none;border-bottom:1px solid var(--wg);padding-bottom:4px}
+.explore{max-width:1440px;margin:0 auto;padding:64px 56px 0;text-align:center}
+.explore a{display:inline-block;font-size:14px;letter-spacing:.3em;text-transform:uppercase;color:var(--wg);text-decoration:none;border:1px solid var(--rule);padding:16px 40px}
+
+/* RESOURCES — blog-style grid of guides, three across on widescreen */
+.res{background:var(--ww);margin-top:110px}
+.res-in{max-width:1320px;margin:0 auto;padding:96px 56px}
+.res-eyebrow{font-size:14px;letter-spacing:.4em;text-transform:uppercase;color:var(--mid)}
+.res-lead{margin-top:20px;font-size:20px;line-height:1.6;color:var(--read);max-width:32em}
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:56px}
+.res-card{display:flex;flex-direction:column;text-decoration:none;color:inherit}
+.res-thumb{aspect-ratio:3/2;overflow:hidden;background:var(--panel)}
+.res-thumb img{width:100%;height:100%;object-fit:cover;object-position:center 35%;transition:transform .5s ease}
+.res-card:hover .res-thumb img{transform:scale(1.04)}
+.res-card h3{margin-top:22px;font-weight:300;font-size:22px;line-height:1.3;letter-spacing:-.01em;color:var(--wg)}
+.res-card p{margin-top:12px;font-size:17px;line-height:1.6;color:var(--read)}
+.res-card .res-read{margin-top:16px;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--wg);border-bottom:1px solid var(--wg);align-self:flex-start;padding-bottom:2px}
+.res-cta{display:inline-block;margin-top:56px;font-size:14px;letter-spacing:.3em;text-transform:uppercase;color:var(--ww);background:var(--wg);text-decoration:none;padding:18px 44px}
+/* CTA — split with rules */
+.cta{max-width:1440px;margin:120px auto 0;padding:0 56px 110px}
+.cta-in{border-top:1px solid var(--rule);padding-top:80px;display:grid;grid-template-columns:1.15fr 1fr;gap:80px;align-items:start}
+.cta h2{font-weight:300;font-size:clamp(32px,2.8vw,42px);line-height:1.25;letter-spacing:-.02em;color:var(--wg)}
+.cta p{font-size:18px;line-height:1.8;color:var(--read);margin-top:26px}
+.cta-side{border-left:1px solid var(--rule);padding-left:56px}
+.cta-side .line{font-size:18px;line-height:1.85;color:var(--read)}
+.cta-side .tel{display:block;margin-top:10px;color:var(--wg);text-decoration:none}
+.cta-btn{display:inline-block;margin-top:34px;font-size:14px;letter-spacing:.3em;text-transform:uppercase;color:var(--ww);background:var(--wg);text-decoration:none;padding:18px 44px}
+
+@media(max-width:1000px){
+ .why{padding:80px 32px 70px}
+ .w-head{margin-bottom:40px}
+ .w-strip{grid-template-columns:repeat(5,1fr);gap:14px}
+ .w-title{font-size:16px}
+ .w-num{margin-top:12px}
+ .w-panel-wrap{margin-top:30px}
+ .w-panel{grid-template-columns:160px 1fr;gap:32px;padding:36px 32px}
+ .w-quote{font-size:24px}
+ .sv-head{padding:0 32px}
+ .band,.band.alt{grid-template-columns:1fr;min-height:0}
+ .band .pic,.band.alt .pic{order:1;min-height:380px;height:380px}
+ .band .txt,.band.alt .txt{order:2;padding:44px 32px 56px}
+ .ghost{font-size:100px;top:20px;right:26px}
+ .explore{padding:44px 32px 0}
+ .res{margin-top:88px}.res-in{padding:72px 32px}
+ .res-grid{grid-template-columns:repeat(2,1fr);gap:32px}
+ .cta{padding:0 32px 84px;margin-top:88px}
+ .cta-in{grid-template-columns:1fr;gap:44px;padding-top:60px}
+ .cta-side{border-left:none;padding-left:0;border-top:1px solid var(--rule);padding-top:36px}
+}
+@media(max-width:560px){
+ .why{padding:60px 22px 54px}
+ .w-head{margin-bottom:28px}
+ .w-panel-wrap{display:none}
+ .w-hint{font-size:16px;margin-top:16px}
+ .w-hint .w-hint-arrows{display:none}
+ .w-strip{display:block;border-top:1px solid var(--rule)}
+ .w-item{border-bottom:1px solid var(--rule);padding:0}
+ .w-tile{flex-direction:row;align-items:center;gap:18px;padding:16px 0}
+ .w-pic{width:84px;min-width:84px;aspect-ratio:1/1;filter:none;opacity:1}
+ .w-row{flex-direction:column}
+ .w-num{margin:0 0 4px;font-size:11px}
+ .w-title{font-size:19px;padding-bottom:0;border-bottom:none}
+ .w-item.is-on .w-title{font-weight:500;color:var(--wg)}
+ .w-tile{position:relative}
+ .w-plus{top:50%;right:2px;transform:translateY(-50%);font-size:26px;opacity:1}
+ .w-item.is-on .w-plus{transform:translateY(-50%) rotate(45deg)}
+ .w-item.is-on .w-drop{display:block;padding:2px 0 26px;
+   animation:wIn .45s cubic-bezier(0.22,0.61,0.36,1)}
+ .w-drop .w-sub{font-size:16px;margin-top:0}
+ .w-drop .w-quote{font-size:21px;margin-top:12px;padding-left:18px;border-left:2px solid var(--brown)}
+ .w-drop .w-attr{font-size:16px;margin-top:14px}
+ @keyframes wIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+ .sv-head{padding:0 22px}.sv-head .in{padding:36px 0 38px}
+ .band .pic,.band.alt .pic{min-height:300px;height:300px}
+ .band .txt,.band.alt .txt{padding:36px 22px 48px}
+ .band h3{font-size:29px}.band p{font-size:18px}
+ .ghost{display:none}
+ .bnum{display:block}
+ .band-cta{display:inline-block;margin-top:24px}
+ .explore{padding:38px 22px 0}.explore a{display:block;padding:18px 0}
+ .res{margin-top:64px}.res-in{padding:60px 22px}
+ .res-lead{font-size:18px}
+ .res-grid{grid-template-columns:1fr;gap:36px;margin-top:44px}
+ .res-card h3{font-size:21px}
+ .res-cta{display:block;text-align:center;padding:18px 0}
+ .cta{padding:0 22px 64px;margin-top:64px}
+ .cta h2{font-size:29px}.cta p,.cta-side .line{font-size:18px}
+ .cta-btn{display:block;text-align:center;padding:18px 0}
+}
+</style></head><body>
+<nav class="nav">
+  <div class="brand">THORNE GROUP</div>
+  <div class="navlinks">
+    <a href="#">Why Us</a><a href="#">Projects</a><a href="#">Services</a>
+  </div>
+  <a class="navcta" href="#">Start a Conversation</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Family Owned &nbsp;|&nbsp; Est. 2006</p>
+    <h1>Architectural Homes.<br>Renovations.<br><span class="light">Development Collaborations.</span></h1>
+    <p class="lead">From  space-smart home or a large-scale architectural residence, our team's unique mix of development, construction and project delivery experience helps you make better decisions from the very beginning.</p>
+    <p class="pullquote">"Voted Most Trusted Architectural Builder in the Bay of Plenty. Five years running.<br>Not by judges. By the people we built for."</p>
+
+    <div class="hero-stats">
+      <div class="hstat"><span class="hstat-n">100+</span><span class="hstat-l">Client Testimonials</span></div>
+      <div class="hstat"><span class="hstat-n">5 x</span><span class="hstat-l">Most Trusted</span></div>
+      <div class="hstat"><span class="hstat-n">20</span><span class="hstat-l">Years in Business</span></div>
+    </div>
+  </div>
+  <div class="hero-img"><video class="hero-video" autoplay muted loop playsinline preload="auto" poster=""><source src="https://video.wixstatic.com/video/b2375c_a01995885a654c4a8a9f8f23245990c1/1080p/mp4/file.mp4" type="video/mp4"></video></div>
+</section>
+<section class="why">
+ <div class="w-head"><h2>Why people recommend <strong>Thorne Group</strong></h2>
+ <p class="w-lead">More than 100 previous clients have shared their experience. Their words explain our reputation better than we ever could.</p>
+ <p class="w-hint">Tap the <span class="w-hint-plus">+</span> on any benefit<span class="w-hint-arrows">, then use the arrows</span> to read the proof behind each one.</p></div>
+
+ <div class="w-strip">
+  <div class="w-item is-on">
+   <button class="w-tile" data-i="0"><div class="w-pic"><img src="https://static.wixstatic.com/media/b2375c_6e106badc3024bd4bb3579fb2b18803a~mv2.jpg" alt="Thorne Group show home interior"></div>
+    <span class="w-row"><span class="w-num">01</span><span class="w-title">Complete Trust</span><span class="w-plus" aria-hidden="true">+</span></span></button>
+   <div class="w-drop">
+    <p class="w-sub">A reputation built by the people who have built with us</p>
+    <p class="w-quote">&quot;I hadn’t realised Building Companies of such skill and integrity existed until we experienced Thorne Group.&quot;</p>
+    <p class="w-attr">A. &amp; N. Dawson</p>
+   </div>
+  </div>
+  <div class="w-item">
+   <button class="w-tile" data-i="1"><div class="w-pic"><img src="https://static.wixstatic.com/media/b2375c_7a7a31e6f97c4f99bcc54be3fba6bf8c~mv2.jpg" alt="Summerhill home exterior"></div>
+    <span class="w-row"><span class="w-num">02</span><span class="w-title">Proven Reputation</span><span class="w-plus" aria-hidden="true">+</span></span></button>
+   <div class="w-drop">
+    <p class="w-sub">Trust earned through experience, not advertising.</p>
+    <p class="w-quote">“We had so much trust in them, we were confident they weren't fleecing us&quot;</p>
+    <p class="w-attr">— Ken &amp; Gaye</p>
+   </div>
+  </div>
+  <div class="w-item">
+   <button class="w-tile" data-i="2"><div class="w-pic"><img src="https://static.wixstatic.com/media/b2375c_3f365e78ddc940a096059ba2979ce991~mv2.jpg" alt="Interior detail"></div>
+    <span class="w-row"><span class="w-num">03</span><span class="w-title">Experience that saves money</span><span class="w-plus" aria-hidden="true">+</span></span></button>
+   <div class="w-drop">
+    <p class="w-sub">Saving money before construction begins.</p>
+    <p class="w-quote">“They saved us hundreds of thousands sourcing alterative, superior products.&quot;</p>
+    <p class="w-attr">Rebecca &amp; Evan Hick</p>
+   </div>
+  </div>
+  <div class="w-item">
+   <button class="w-tile" data-i="3"><div class="w-pic"><img src="https://static.wixstatic.com/media/b2375c_391b7a6854124fcf9122bb9213658e44~mv2.jpg" alt="Pennantia home"></div>
+    <span class="w-row"><span class="w-num">04</span><span class="w-title">Many clients build with us more than once.</span><span class="w-plus" aria-hidden="true">+</span></span></button>
+   <div class="w-drop">
+    <p class="w-sub">Clients who return say more than anything.</p>
+    <p class="w-quote">“You feel part of a family....an exclusive club&quot;</p>
+    <p class="w-attr">— Robin &amp; Sarah<br>Three projects with Thorne Group</p>
+   </div>
+  </div>
+  <div class="w-item">
+   <button class="w-tile" data-i="4"><div class="w-pic"><img src="https://static.wixstatic.com/media/b2375c_29d7694a155e4d22b7e2fe45a6ff1baa~mv2.jpg" alt="Living space"></div>
+    <span class="w-row"><span class="w-num">05</span><span class="w-title">A name the market recognises.</span><span class="w-plus" aria-hidden="true">+</span></span></button>
+   <div class="w-drop">
+    <p class="w-sub">A reputation that stays with the home.</p>
+    <p class="w-quote">“Their reputation is very good. I believe it adds value to our home and will to the sale price if/when we sell.”</p>
+    <p class="w-attr">Kurt</p>
+   </div>
+  </div>
+ </div>
+
+ <div class="w-panel-wrap">
+  <div class="w-caret" id="wCaret"></div>
+  <div class="w-panel" id="wPanel">
+   <div class="w-panel-pic"><img id="wImg" src="" alt=""></div>
+   <div class="w-panel-body">
+    <p class="w-kicker" id="wKick"></p>
+    <p class="w-sub" id="wSub"></p>
+    <p class="w-quote" id="wQuote"></p>
+    <p class="w-attr" id="wAttr"></p>
+    <div class="w-nav">
+     <button class="w-arrow" id="wPrev" type="button" aria-label="Previous proof"><span aria-hidden="true">&#8592;</span> Previous</button>
+     <button class="w-arrow" id="wNext" type="button" aria-label="Next proof">Next <span aria-hidden="true">&#8594;</span></button>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <script>
+ (function(){
+  /* FOUC fix: reveal once parsed. rAF avoids a flash; extra listeners make the
+     intentional fade fire reliably even when Wix hydrates the iframe late. */
+  function tgReveal(){document.body.classList.add('tg-ready');}
+  requestAnimationFrame(tgReveal);
+  if(document.readyState!=='loading'){tgReveal();}
+  else{document.addEventListener('DOMContentLoaded',tgReveal);}
+  window.addEventListener('load',tgReveal);
+  var items=document.querySelectorAll('.w-item');
+  var caret=document.getElementById('wCaret');
+  function fill(item){
+    var n=item.querySelector('.w-num').textContent;
+    var t=item.querySelector('.w-title').textContent;
+    document.getElementById('wKick').innerHTML='<span class="w-knum">'+n+'</span>'+t;
+    document.getElementById('wSub').innerHTML=item.querySelector('.w-drop .w-sub').innerHTML;
+    document.getElementById('wQuote').innerHTML=item.querySelector('.w-drop .w-quote').innerHTML;
+    document.getElementById('wAttr').innerHTML=item.querySelector('.w-drop .w-attr').innerHTML;
+    var img=item.querySelector('.w-pic img'), pi=document.getElementById('wImg');
+    pi.src=img.src; pi.alt=img.alt;
+    moveCaret(item);
+  }
+  function moveCaret(item){
+    var t=item.querySelector('.w-tile');
+    var wrap=document.querySelector('.w-panel-wrap');
+    if(!wrap.offsetParent) return;
+    var r=t.getBoundingClientRect(), w=wrap.getBoundingClientRect();
+    caret.style.left=(r.left - w.left + r.width/2 - 11)+'px';
+  }
+  var panel=document.getElementById('wPanel');
+  var current=0;
+  /* No animation. Visitor clicks a benefit (or the + / arrows) to reveal its proof. */
+  function show(i){
+    if(i<0) i=items.length-1;
+    if(i>=items.length) i=0;
+    current=i;
+    items.forEach(function(x){x.classList.remove('is-on')});
+    items[i].classList.add('is-on');
+    if(panel){panel.style.opacity='1';}
+    fill(items[i]);
+  }
+  items.forEach(function(item,idx){
+   item.querySelector('.w-tile').addEventListener('click',function(){ show(idx); });
+  });
+  var prev=document.getElementById('wPrev'), next=document.getElementById('wNext');
+  if(prev) prev.addEventListener('click',function(){ show(current-1); });
+  if(next) next.addEventListener('click',function(){ show(current+1); });
+  window.addEventListener('resize',function(){
+    var on=document.querySelector('.w-item.is-on'); if(on) moveCaret(on);
+  });
+  show(0);
+ })();
+ </script>
+</section>
+
+<div class="sv-head"><div class="in">
+ <p class="kicker">20 years refining the way we build. creating systems, processes and detailing.</p>
+ <h2>Our Services</h2>
+</div></div>
+
+<section class="band"><div class="pic"><img src="https://static.wixstatic.com/media/b2375c_022028a1b8a84a498fa1b4b5fb07cfb5~mv2.jpeg" alt="Architectural home"></div>
+ <div class="txt"><span class="ghost">01</span><span class="bnum">01</span><h3>Architectural Homes.</h3>
+ <p>For clients planning a custom home, knock-down rebuild or high-end renovation. Early builder involvement at the design stage protects your budget before a line is drawn.</p>
+ <a class="band-cta" href="#">Find out more</a></div></section>
+<section class="band alt"><div class="txt"><span class="ghost">02</span><span class="bnum">02</span><h3>Space Optimising Homes</h3>
+ <p>This is the space to introduce the Project section. Give a brief overview of the types of projects featured below. Smart planning makes every square metre work harder for the way you live.</p>
+ <a class="band-cta" href="#">Find out more</a></div>
+ <div class="pic"><img src="https://static.wixstatic.com/media/b2375c_72b7a2a3c42842de9f9af5899689b53e~mv2.jpg" alt="Space optimising home"></div></section>
+<section class="band"><div class="pic"><img src="https://static.wixstatic.com/media/b2375c_50200e424c30478cade0756fc2e24628~mv2.jpg" alt="Feasibility meeting"></div>
+ <div class="txt"><span class="ghost">03</span><span class="bnum">03</span><h3>Feasability</h3>
+ <p>Feasibility advice before buying land, finalising plans or setting a budget. Knowing what is truly possible up front saves costly surprises later.</p>
+ <a class="band-cta" href="#">Find out more</a></div></section>
+<section class="band alt"><div class="txt"><span class="ghost">04</span><span class="bnum">04</span><h3>Developement Collaborations</h3>
+ <p>For landowners, investors or development collaborations. We bring construction insight to the table early, so the numbers stack up from the start.</p>
+ <a class="band-cta" href="#">Find out more</a></div>
+ <div class="pic"><img src="https://static.wixstatic.com/media/b2375c_9fa8c5694e9d4c56b72b03f4504ef479~mv2.png" alt="Development collaboration"></div></section>
+
+<div class="explore"><a href="#">Explore all projects</a></div>
+
+<section class="res"><div class="res-in">
+ <p class="res-eyebrow">Resources</p>
+ <p class="res-lead">Free guides to help you make better decisions before you build.</p>
+ <div class="res-grid">
+
+  <a class="res-card" href="https://thornegroup.co.nz/exclusive">
+   <div class="res-thumb"><img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Crect width='600' height='400' fill='%23E9E6E1'/%3E%3Ctext x='50%25' y='50%25' fill='%237a746e' font-family='sans-serif' font-size='22' text-anchor='middle' dominant-baseline='middle'%3EReplace photo 1%3C/text%3E%3C/svg%3E" alt="Placeholder photo"></div>
+   <h3>10 critical questions to ask prior clients</h3>
+   <p>The questions that reveal what a building company is really like to work with.</p>
+   <span class="res-read">Read the guide</span>
+  </a>
+
+  <a class="res-card" href="https://thornegroup.co.nz/exclusive">
+   <div class="res-thumb"><img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Crect width='600' height='400' fill='%23E9E6E1'/%3E%3Ctext x='50%25' y='50%25' fill='%237a746e' font-family='sans-serif' font-size='22' text-anchor='middle' dominant-baseline='middle'%3EReplace photo 2%3C/text%3E%3C/svg%3E" alt="Placeholder photo"></div>
+   <h3>Saving money before you build</h3>
+   <p>Where the real savings are made, long before construction begins.</p>
+   <span class="res-read">Read the guide</span>
+  </a>
+
+  <a class="res-card" href="https://thornegroup.co.nz/exclusive">
+   <div class="res-thumb"><img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Crect width='600' height='400' fill='%23E9E6E1'/%3E%3Ctext x='50%25' y='50%25' fill='%237a746e' font-family='sans-serif' font-size='22' text-anchor='middle' dominant-baseline='middle'%3EReplace photo 3%3C/text%3E%3C/svg%3E" alt="Placeholder photo"></div>
+   <h3>10 point build or renovate guide</h3>
+   <p>A clear checklist to work through before you commit to your project.</p>
+   <span class="res-read">Read the guide</span>
+  </a>
+
+ </div>
+ <a class="res-cta" href="https://thornegroup.co.nz/exclusive">Get exclusive pre-access</a>
+</div></section>
+
+<section class="cta"><div class="cta-in">
+ <div><h2>Book a free, no-obligation project consultation.</h2>
+ <p>We’d love to hear about your ideas for your project.  Contact us to arrange a time for a no obligation chat – over a coffee, at our office or at your property.  We’ll review your site and brief, what's feasible within your budget.</p></div>
+ <div class="cta-side"><p class="line">Unit 1, 41 Newton Street<br>Mount Maunganui, 3116
+ <a class="tel" href="tel:075755555">07 5755555</a></p>
+ <a class="cta-btn" href="#">Get in touch</a></div>
+</div></section>
+</body></html>
