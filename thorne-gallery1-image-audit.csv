@@ -1,0 +1,126 @@
+index,filename,native_width,native_height,aspect_ratio,orientation,format,original_KB,sharpness_score,verdict,wix_media_id
+0,northface.jpg,2000,1334,1.499,landscape,JPEG,825,898.2,OK,b2375c_8c102e2601444cf59c34b6479147ee5f~mv2.jpeg
+1,nf-2.jpg,1334,2000,0.667,portrait,JPEG,1719,162.5,OK,b2375c_fae84b57d32f4db081d48940b02d0215~mv2.jpg
+2,nf-3.jpg,2000,1318,1.517,landscape,JPEG,2107,771.8,OK,b2375c_b975baae5ac94897a978559c45deecfb~mv2.jpg
+3,nf-4.jpg,2000,1461,1.369,landscape,JPEG,2307,1450.1,OK,b2375c_0f99fa51f4974b5c97902d001e39a60d~mv2.jpg
+4,nf-5.jpg,1334,2000,0.667,portrait,JPEG,2169,457.5,OK,b2375c_e0e20ca7f95f47b0ab7c5b9879ab7452~mv2.jpg
+5,nf-6.jpg,1356,2000,0.678,portrait,JPEG,1575,257.3,OK,b2375c_b51d7cdbb23049d68fe579345e951d79~mv2.jpg
+6,dunes.jpg,4000,2668,1.499,landscape,JPEG,1295,490.4,OK,b2375c_6bf7fd1afb4e43f7a7c8382242aa4e75~mv2.jpg
+7,dunes-2.jpg,5332,7994,0.667,portrait,JPEG,11530,441.5,OK,b2375c_80df3c0488d94af0b322ae3ea3379b9f~mv2.jpg
+8,dunes-3.jpg,2001,2668,0.75,portrait,JPEG,5374,164.7,OK,b2375c_b47cebdccf274163aa84ac3619a4cca4~mv2.jpg
+9,dunes-5.jpg,5464,8192,0.667,portrait,JPEG,11416,66.9,OK,b2375c_494d3fdd06cf4d4f91c9b2e8b14a9b9b~mv2.jpg
+10,dunes-7.jpg,5153,7726,0.667,portrait,JPEG,9782,626.8,OK,b2375c_bc0aca04b59948c8a797dff3db96bb10~mv2.jpg
+11,mount-golf-course.jpg,5472,3648,1.5,landscape,JPEG,4393,935.0,OK,b2375c_477008e0bd2349368b65b2d91a8f68f3~mv2.jpg
+12,mgc-2.jpg,5472,3648,1.5,landscape,JPEG,4135,536.6,OK,b2375c_5b79077052eb48e890659e5515814e8b~mv2.jpg
+13,mgc-3.jpg,3427,2685,1.276,landscape,JPEG,3399,842.6,OK,b2375c_f4bd3140ea7c4d5db808824e59b7a908~mv2.jpg
+14,mgc-4.jpg,5184,3456,1.5,landscape,JPEG,3646,403.0,OK,b2375c_04c3a98348ee490b8ec28e13fe0bc41e~mv2.jpg
+15,mgc-5.jpg,2279,2142,1.064,landscape,JPEG,3077,3505.4,OK,b2375c_38ce8378b28b4859bc3aeda77251c4a8~mv2.jpg
+16,mgc-6.jpg,1451,1451,1.0,square,JPEG,1959,269.9,OK,b2375c_43cf00a472e84fdca962d0535959e9a5~mv2.jpg
+17,bond-street.jpg,2541,1821,1.395,landscape,JPEG,673,427.9,OK,b2375c_c8cc74a29e4640dfb497369e1ffb3e42~mv2.jpg
+18,bond-3.jpg,3509,1657,2.118,landscape,JPEG,868,531.0,OK,b2375c_262fc49bf5334c49a32a83eb364a7c9b~mv2.jpg
+19,bond-4.jpg,4944,3150,1.57,landscape,JPEG,1872,469.7,OK,b2375c_1f8022bccadf47bab28d54175e13dd2d~mv2.jpg
+20,bond-5.jpg,4992,6666,0.749,portrait,JPEG,5453,1293.0,OK,b2375c_12fa9242686f46bfac28afb11dac60cd~mv2.jpg
+21,bond-6.jpg,319,480,0.665,portrait,JPEG,35,3503.7,Too small (319x480) — pixelates in a row. Replace with higher-res export.,b2375c_28088e711211455eab3320b9fc78c682~mv2.jpg
+22,bond-7.jpg,4686,3074,1.524,landscape,JPEG,1785,673.6,OK,b2375c_e4499b5e10ba4a739b3a5b852fcabe81~mv2.jpg
+23,bond-8.jpg,640,426,1.502,landscape,JPEG,39,163.0,"Low res (640x426) — soft when upscaled. Marginal, replace if possible.",b2375c_9ea00e913c964a16a721e05d824361b4~mv2.jpg
+24,waterways.jpg,3200,2133,1.5,landscape,JPEG,2416,1437.3,OK,b2375c_fc991b1915a54fa09449b4a0227e2c27~mv2.jpg
+25,ww-2.jpg,2000,1333,1.5,landscape,JPEG,377,437.1,OK,b2375c_cf0c5f749d3d4d4a8ddef1ff12d350c9~mv2.jpg
+26,ww-3.jpg,2000,1334,1.499,landscape,JPEG,419,954.6,OK,b2375c_130faf55e6b148e38e2b9219678c840a~mv2.jpg
+27,ww-4.jpg,2000,1334,1.499,landscape,JPEG,262,361.5,OK,b2375c_ac6c332538fc4d0988352355ca1fa144~mv2.jpg
+28,ww-6.jpg,1401,2000,0.701,portrait,JPEG,338,200.8,OK,b2375c_12e94f1b084a454ab2a119973579954c~mv2.jpg
+29,coastal-vibes.jpg,8063,6048,1.333,landscape,JPEG,9062,2017.8,OK,b2375c_d2c0c0495373411a871b0c4df970f733~mv2.jpg
+30,cv-2.jpg,8064,6048,1.333,landscape,JPEG,6674,1204.0,OK,b2375c_69f0e3fce7244e5ca8001fcf5f9d114a~mv2.jpg
+31,cv-3.jpg,5186,3890,1.333,landscape,JPEG,9586,2624.2,OK,b2375c_4e904427d7414629b71bd4393c9ab462~mv2.jpg
+32,cv-4.jpg,719,899,0.8,portrait,JPEG,181,463.1,"Low res (719x899) — slightly soft, usable at small cell sizes only.",b2375c_c65175aff516497e91a59b573b4df10f~mv2.jpeg
+33,mid-century.jpg,2500,1668,1.499,landscape,JPEG,1073,484.5,OK,b2375c_17e529514eec4be181de14cd5d79f2c9~mv2.jpg
+34,mc-2.jpg,4530,4451,1.018,square,JPEG,4585,1292.9,OK,b2375c_4a384d1142b0401997ea9869609aa5ce~mv2.jpg
+35,mc-3.jpg,4480,6720,0.667,portrait,JPEG,3114,351.8,OK,b2375c_a32f6dd86f8c49f084c7ee718d48adea~mv2.jpg
+36,mc-4.jpg,4480,6720,0.667,portrait,JPEG,4563,1373.0,OK,b2375c_a2ca6aaa0fde42b3b6bd038e1fb57614~mv2.jpg
+37,mc-5.jpg,4480,6720,0.667,portrait,JPEG,3510,1206.3,OK,b2375c_3fb2ac1ca6744d7097f47da0c62364d8~mv2.jpg
+38,mc-6.jpg,1668,2500,0.667,portrait,JPEG,1581,848.2,OK,b2375c_662809dba7014485b2c04ebe7df5cd7a~mv2.jpg
+39,rural-1.jpg,3992,2992,1.334,landscape,JPEG,4472,1023.7,OK,b2375c_52e8d84412894023a592cb5bf4fcd708~mv2.jpg
+40,hoth-2.jpg,6480,4320,1.5,landscape,JPEG,4065,674.5,OK,b2375c_8cdec7614cf8408a9e40084eb13cd4c5~mv2.jpg
+41,hoth-3.jpg,3317,2481,1.337,landscape,JPEG,1777,4900.2,OK,b2375c_04deba0981ca4b7cac696490831dec08~mv2.jpg
+42,hoth-4.jpg,800,1200,0.667,portrait,JPEG,634,1002.5,OK,b2375c_982b8c60cbb447a3b631572fae35518f~mv2.jpg
+43,hoth-5.jpg,1920,1280,1.5,landscape,JPEG,1078,203.4,OK,b2375c_cd8100721c7247cba5314f522070bfa2~mv2.jpg
+44,hoth-6.jpg,3992,2992,1.334,landscape,JPEG,3958,1394.8,OK,b2375c_6605fa5f98f643bbb867b8e8d2ae172b~mv2.jpg
+45,hoth-7.jpg,5675,3783,1.5,landscape,JPEG,3669,2197.1,OK,b2375c_74c2f4532ff94ab89d9efaf6c32d61c2~mv2.jpg
+46,hilltop-haven.jpg,2800,1867,1.5,landscape,JPEG,2621,1649.9,OK,b2375c_90dab789498e4a4ea34bf00d5a2a0f36~mv2.jpg
+47,hh-3.jpg,2800,1867,1.5,landscape,JPEG,2543,1165.6,OK,b2375c_6f8891048aed444c8bea2e2e06bf3a85~mv2.jpg
+48,hh-4.jpg,2800,1867,1.5,landscape,JPEG,2138,705.2,OK,b2375c_0b5fc9cbd2b34e0ea0f702bc250a1a30~mv2.jpg
+49,hh-5.jpg,1214,1517,0.8,portrait,JPEG,1484,260.8,OK,b2375c_bda5d3502dc1417389c33dae0d3ba3c1~mv2.jpg
+50,hh-6.jpg,2800,1866,1.501,landscape,JPEG,1755,664.5,OK,b2375c_0add70f153ff4c4b9b169ca85ae007e5~mv2.jpg
+51,hh-7.jpg,2800,1867,1.5,landscape,JPEG,2013,1960.2,OK,b2375c_a77100ad295e4d38918c94ca49ef9782~mv2.jpg
+52,hh-8.jpg,2800,1867,1.5,landscape,JPEG,2332,1279.2,OK,b2375c_989f220d064a406cb030bc1710c728e6~mv2.jpg
+53,river-views.jpg,1920,1280,1.5,landscape,JPEG,1901,1041.2,OK,b2375c_5cb3532376eb4e99ad646e3be58c4a69~mv2.jpg
+54,rv-2.jpg,1920,1280,1.5,landscape,JPEG,1953,1531.5,OK,b2375c_b156090af53d4ac48680d28014dd8cd6~mv2.jpg
+55,rv-3.jpg,1920,1280,1.5,landscape,JPEG,1617,1039.5,OK,b2375c_9f38726416a3423b9201cb1632779566~mv2.jpg
+56,rv-4.jpg,1920,1909,1.006,square,JPEG,2393,798.9,OK,b2375c_bd6db4d51ea14300aa1b455b3d45a34d~mv2.jpg
+57,rv-5.jpg,1920,1280,1.5,landscape,JPEG,1587,720.6,OK,b2375c_d76b9550d83045028645f7014dc5f852~mv2.jpg
+58,rv-6.jpg,1920,2880,0.667,portrait,JPEG,4324,2098.5,OK,b2375c_ad12c48ec3254e57aeeb9e03dcbb48ab~mv2.jpg
+59,sophisticated-mount.jpg,1080,720,1.5,landscape,JPEG,703,594.8,OK,b2375c_731eb984932147f4ba15410bc3db3be9~mv2.jpg
+60,sm-2.jpg,5504,6880,0.8,portrait,JPEG,20311,156.1,OK,b2375c_94c65741d4ed4c23a20d55610724543f~mv2.jpg
+61,sm-3.jpg,5188,6485,0.8,portrait,JPEG,12638,265.5,OK,b2375c_634d059e076a46b39fd498b9c835b940~mv2.jpg
+62,sm-4.jpg,5504,6880,0.8,portrait,JPEG,14550,78.0,OK,b2375c_53506301869140b185f9dc9ef3127ea0~mv2.jpg
+63,sm-5.jpg,720,1080,0.667,portrait,JPEG,480,405.0,OK,b2375c_6ba93d0f990447c1ab22364cde3daf91~mv2.jpg
+64,sm-6.jpg,1080,720,1.5,landscape,JPEG,356,128.7,"Slightly soft (1080x720), acceptable.",b2375c_f1f38fe0a04b4fa9b974ca7a43c95d85~mv2.jpg
+65,surf-break.jpg,1920,1280,1.5,landscape,JPEG,972,1204.8,OK,b2375c_61a260865adb432bbd7d41483c115672~mv2.jpg
+66,sb-2.jpg,1920,1280,1.5,landscape,JPEG,270,70.9,OK,b2375c_57427ca0286e4fcbafbc557ef9401e4c~mv2.jpg
+67,sb-3.jpg,1920,1280,1.5,landscape,JPEG,401,122.9,OK,b2375c_7f26ce6b0f38404db2246afbf95e1295~mv2.jpg
+68,sb-4.jpg,1920,1279,1.501,landscape,JPEG,791,1010.0,OK,b2375c_91f561cca56444a1b25fbffb8bc0c87c~mv2.jpg
+69,sb-5.jpg,1920,1280,1.5,landscape,JPEG,571,273.3,OK,b2375c_5224107069fc4c1d89e468eff9cce884~mv2.jpg
+70,sb-6.jpg,1279,1920,0.666,portrait,JPEG,353,102.5,OK,b2375c_24ae2e49151a4153b3cc2d7439e087e3~mv2.jpg
+71,sb-7.jpg,1920,1280,1.5,landscape,JPEG,348,208.6,OK,b2375c_6575135fb6054a6bb42086845c836ebc~mv2.jpg
+72,kit-1.jpg,8082,5390,1.499,landscape,JPEG,16062,416.6,OK,b2375c_f6409ff49e584d4f92cdff36e3626970~mv2.jpg
+73,kitchen-inspiration.jpg,1447,2000,0.724,portrait,JPEG,314,159.2,OK,b2375c_3d6ee4941ea54e63b6cfe63dcc450bba~mv2.jpg
+74,kitchen-inspiration.jpg,5464,8192,0.667,portrait,JPEG,7847,60.4,OK,b2375c_697d5a0b5d004b83b1ce916af390c417~mv2.jpg
+75,kit-4.jpg,2500,2500,1.0,square,JPEG,1093,72.7,OK,b2375c_957ffd7e068349b3a72647d5847cd636~mv2.jpg
+76,kit-5.jpg,1667,2317,0.719,portrait,JPEG,2317,276.4,OK,b2375c_55709a8706624db9bb49fa8d37f2aa6f~mv2.jpg
+77,kit-7.jpg,1667,2500,0.667,portrait,JPEG,1065,312.1,OK,b2375c_77761d7fdeb64c5c953a81f00db0a82e~mv2.jpg
+78,b2375c_69047928b0db4a8e92cff14c84ec8880~mv2.gif,1667,2500,0.667,portrait,GIF,16376,114.9,16MB GIF — huge page-weight for one image. Convert to jpg/webp.,b2375c_69047928b0db4a8e92cff14c84ec8880~mv2.gif
+79,kit-9.jpg,5457,8182,0.667,portrait,JPEG,21332,28.0,Blurry — soft and hazy even at display size. Replace or drop.,b2375c_5910ee8ac38242fa943c159920ff0002~mv2.jpg
+80,kit-10.jpg,1024,1280,0.8,portrait,JPEG,877,122.9,"Slightly soft (1024x1280), acceptable.",b2375c_e5d8977b45194f43ab00cb6488c1ab60~mv2.jpg
+81,kit-11.jpg,1779,1334,1.334,landscape,JPEG,1134,542.2,OK,b2375c_085598df88604f0bbfb12a6daee63d54~mv2.jpg
+82,kit-13.jpg,1668,2500,0.667,portrait,JPEG,997,175.1,OK,b2375c_e56b18902a0044e6b5d076e31b1b17ab~mv2.jpg
+83,kit-14.jpg,1334,2000,0.667,portrait,JPEG,207,62.6,OK,b2375c_5821c1436ab945309f2f9cd8778d5228~mv2.jpg
+84,kit-15.jpg,8192,5464,1.499,landscape,JPEG,24906,474.4,"Sharp but 25MB original — fine (Wix serves resized), noted for reference.",b2375c_b0551cd6fb1f414c9f0779287ffba5c9~mv2.jpg
+85,bathroom-inspiration.jpg,6583,4389,1.5,landscape,JPEG,2873,352.6,OK,b2375c_861ec1650ae24d44a4fe78a08510d91e~mv2.jpg
+86,bathroom-inspiration.jpg,5321,7977,0.667,portrait,JPEG,11380,251.7,OK,b2375c_35f44f2c734b4f2080d2be0a9a096bc8~mv2.jpg
+87,bathroom-inspiration.jpg,3999,5996,0.667,portrait,JPEG,6832,91.8,OK,b2375c_ddbaa39194404507b4af4c8c57ed7289~mv2.jpg
+88,bathroom-inspiration.jpg,5387,8077,0.667,portrait,JPEG,12176,136.2,OK,b2375c_bfc463f54768402eac94a490fb5d6653~mv2.jpg
+89,bathroom-inspiration.jpg,5271,7902,0.667,portrait,JPEG,11131,188.2,OK,b2375c_bf206ae283d5499b9c9e2f391be953b1~mv2.jpg
+90,bath-6.jpg,1160,1333,0.87,portrait,JPEG,231,149.6,OK,b2375c_1c15df9c749345f4b5884209ba1a7cf0~mv2.jpg
+91,bath-7.jpg,5287,7927,0.667,portrait,JPEG,10066,286.9,OK,b2375c_fb02eb2f23c24e3ea4197af4173bdadf~mv2.jpg
+92,bath-8.jpg,934,1279,0.73,portrait,JPEG,144,62.2,"Smallest bathroom shot (934x1279) — OK at 1x, soft on retina.",b2375c_534aba6c340249f3afbdf0d0a32e3ab6~mv2.jpg
+93,bath-9.jpg,1668,2500,0.667,portrait,JPEG,946,99.5,OK,b2375c_a1931b24225c4e0b9e9d9bd163a0f58e~mv2.jpg
+94,bath-10.jpg,1667,2500,0.667,portrait,JPEG,481,151.9,OK,b2375c_473021a040514dc1a2ce3f3ba64b2e3c~mv2.jpg
+95,bath-11.jpg,3303,4954,0.667,portrait,JPEG,8302,466.5,OK,b2375c_28db5c77e2c44ecf996782ab074ed0c5~mv2.jpg
+96,bath-12.jpg,1000,1500,0.667,portrait,JPEG,281,203.6,OK,b2375c_b3467601a64e4d3b99ef059920b546ed~mv2.jpg
+97,out-1.jpg,1356,2000,0.678,portrait,JPEG,1575,257.3,OK,b2375c_b51d7cdbb23049d68fe579345e951d79~mv2.jpg
+98,out-3.jpg,2000,1334,1.499,landscape,JPEG,2428,1121.2,OK,b2375c_b346f87cbb594c309ee19413efb1f78c~mv2.jpg
+99,out-5.jpg,2500,1667,1.5,landscape,JPEG,836,679.8,OK,b2375c_19a3cbccde8a4610aec103ad781caa36~mv2.jpg
+100,out-6.jpg,5343,8010,0.667,portrait,JPEG,11905,574.5,OK,b2375c_8d151b481a384a6aa80cc17a4a00b678~mv2.jpg
+101,out-7.jpg,1920,1280,1.5,landscape,JPEG,1587,720.6,OK,b2375c_8a877c8a938043d69257365a0f6c8047~mv2.jpg
+102,out-8.jpg,6006,4002,1.501,landscape,JPEG,13375,611.0,OK,b2375c_d9f7cc83be64499399b9d20cb196c771~mv2.jpg
+103,out-9.jpg,1334,2000,0.667,portrait,JPEG,466,354.6,OK,b2375c_cba3d84334614b468c7416d70878e5fb~mv2.jpg
+104,out-10.jpg,1668,2500,0.667,portrait,JPEG,1591,1303.5,OK,b2375c_d474fd76df52482b91e15e79a0b50dd0~mv2.jpg
+105,out-11.jpg,1668,2500,0.667,portrait,JPEG,1248,358.9,OK,b2375c_f3c21032dc0d42ccad4c4f908c888e60~mv2.jpg
+106,det-3.jpg,1334,1662,0.803,portrait,JPEG,2128,534.3,OK,b2375c_33624e850e464adfbf145f7aa58a84f4~mv2.jpg
+107,architectural-detailing.jpg,5327,7986,0.667,portrait,JPEG,12370,49.1,OK,b2375c_a9f54ed32eab44b485c7ed69a5a7793d~mv2.jpg
+108,det-6.jpg,3840,5760,0.667,portrait,JPEG,10895,582.6,OK,b2375c_fc95742915f34c0a825a2c3764b292cf~mv2.jpg
+109,det-8.jpg,500,500,1.0,square,JPEG,78,201.6,Low res (500x500) — batten detail goes soft at row height. Marginal.,b2375c_94e615a2929145d79ebe8548d1fe4c8c~mv2.jpg
+110,det-9.jpg,4512,6765,0.667,portrait,JPEG,5602,132.6,OK,b2375c_a93ee794d797400a8610ba2db8d94595~mv2.jpg
+111,det-10.jpg,5080,7617,0.667,portrait,JPEG,8482,103.6,OK,b2375c_e65daa09593c4c458bf87929043c67ac~mv2.jpg
+112,det-11.jpg,4385,6574,0.667,portrait,JPEG,7670,325.9,OK,b2375c_cf39192e0c794af9a9c642ff0f9f75be~mv2.jpg
+113,det-12.jpg,2500,1667,1.5,landscape,JPEG,1183,515.2,OK,b2375c_21343e76610c46e8be9900bd1cc945f9~mv2.jpg
+114,furn-1.jpg,5760,3840,1.5,landscape,JPEG,12560,405.9,OK,b2375c_ed1b32ebc8aa4190a532e59962b618c2~mv2.jpg
+115,furn-2.jpg,5464,8192,0.667,portrait,JPEG,14277,169.3,OK,b2375c_cebc521119a34cc8bff249f2b15e5646~mv2.jpg
+116,furn-3.jpg,667,1000,0.667,portrait,JPEG,130,830.4,"Low res (667x1000) — softness reads as texture, usable but marginal.",b2375c_0d0b2f0b930240ab997add8b0117b6c5~mv2.jpg
+117,furn-4.jpg,5425,8133,0.667,portrait,JPEG,14471,307.0,OK,b2375c_92faa6895f9f48fa8a511dfc2b193c8e~mv2.jpg
+118,furn-5.jpg,1667,2223,0.75,portrait,JPEG,4324,109.3,OK,b2375c_470f56e8814b4e46bacd2a5f640cf4b5~mv2.jpg
+119,furn-6.jpg,6000,4000,1.5,landscape,JPEG,10601,351.6,OK,b2375c_819e6bc96a364a31a68925cc2c2e61c9~mv2.jpg
+120,furn-7.jpg,1423,2000,0.712,portrait,JPEG,2392,805.8,OK,b2375c_6f9435c3b52b4906b19e6b1dab86d755~mv2.jpg
+121,furn-8.jpg,5359,8035,0.667,portrait,JPEG,11277,204.6,OK,b2375c_cfe636f2175e402c9aff4a67445353c1~mv2.jpg
+122,furn-9.jpg,6000,4000,1.5,landscape,JPEG,11811,491.6,OK,b2375c_d70c496613bd4f62a7b42599310b1f6d~mv2.jpg
+123,furn-10.jpg,5354,8027,0.667,portrait,JPEG,12346,157.5,OK,b2375c_042c1b2e543b4c558431f4ec3f655beb~mv2.jpg
+124,furn-11.jpg,5464,8192,0.667,portrait,JPEG,12737,623.8,OK,b2375c_bf0b3f4d50174e6b8cbd9ab3125cef61~mv2.jpg
