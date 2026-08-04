@@ -1,0 +1,78 @@
+---
+import '../styles/fonts.css';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="en-NZ">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Thorne Group" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="en_NZ" />
+  </head>
+  <body>
+    <div id="tg-preloader" aria-hidden="true">
+      <div class="pre-words"><span class="pre-w pre-w-left">Celebrating</span><span class="pre-w pre-w-right">20 Years</span></div>
+      <img class="pre-icon" src="https://static.wixstatic.com/media/b2375c_49b40a149c39413eb1d914c0718a3a42~mv2.png" alt="" decoding="async" fetchpriority="high" />
+      <img class="pre-logo" src="https://static.wixstatic.com/media/b2375c_ef5eca5407f14e7ca8999f7efc3e8d1f~mv2.png" alt="" decoding="async" fetchpriority="high" />
+    </div>
+    <style is:inline>
+      #tg-preloader{position:fixed;inset:0;z-index:200;background:#2e2b29;display:flex;align-items:center;justify-content:center;transition:opacity .65s ease}
+      #tg-preloader.done{opacity:0;pointer-events:none}
+      /* faint celebration text, sweeping in from each side */
+      #tg-preloader .pre-words{position:absolute;left:0;right:0;top:50%;transform:translateY(-58%);display:flex;justify-content:center;align-items:center;gap:min(26vw,190px);pointer-events:none;white-space:nowrap}
+      #tg-preloader .pre-w{font-family:'Metric',system-ui,sans-serif;font-weight:300;font-size:clamp(44px,8.5vw,104px);letter-spacing:.01em;color:rgba(250,249,246,.10);opacity:0}
+      #tg-preloader .pre-w-left{animation:tgPreL 2s cubic-bezier(.22,.61,.36,1) .7s forwards}
+      #tg-preloader .pre-w-right{animation:tgPreR 2s cubic-bezier(.22,.61,.36,1) .7s forwards}
+      @keyframes tgPreL{from{opacity:0;transform:translateX(-70px)}to{opacity:1;transform:none}}
+      @keyframes tgPreR{from{opacity:0;transform:translateX(70px)}to{opacity:1;transform:none}}
+      /* the icon opens the sequence, then hands over to the full logo */
+      #tg-preloader .pre-icon{position:relative;max-width:min(18vw,100px);max-height:22vh;width:auto;height:auto;opacity:0;animation:tgPreIn .7s ease .1s forwards,tgPreOut .6s ease 2.8s forwards}
+      #tg-preloader .pre-logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);max-width:min(64vw,340px);max-height:44vh;width:auto;height:auto;opacity:0;animation:tgPreIn .9s ease 2.9s forwards}
+      @keyframes tgPreIn{to{opacity:1}}
+      @keyframes tgPreOut{to{opacity:0}}
+      @media(prefers-reduced-motion:reduce){
+        #tg-preloader .pre-w,#tg-preloader .pre-icon{animation:none;opacity:0}
+        #tg-preloader .pre-logo{animation:none;opacity:1}
+      }
+    </style>
+    <script is:inline>
+      (function () {
+        var p = document.getElementById('tg-preloader');
+        var t0 = Date.now(), MIN = 4200, hidden = false;
+        if (matchMedia('(prefers-reduced-motion: reduce)').matches) MIN = 400;
+        function hide() {
+          if (hidden) return; hidden = true;
+          var wait = Math.max(0, MIN - (Date.now() - t0));
+          setTimeout(function () {
+            p.classList.add('done');
+            setTimeout(function () { if (p.parentNode) p.parentNode.removeChild(p); }, 750);
+          }, wait);
+        }
+        if (document.readyState === 'complete') hide();
+        else window.addEventListener('load', hide);
+        setTimeout(hide, 8500); /* never trap the visitor if something stalls */
+      })();
+    </script>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <script is:inline defer src="/js/fixlinks.js"></script>
+  </body>
+</html>
